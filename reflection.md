@@ -1,4 +1,6 @@
 Use this file to record your reflection on this assignment.
 
 - Which methods did you decide to `overload`, and why?
+I decided to overload at least one constructor for each type of building. This meant a user could create an instance of each type of building with however much information they had. House also had an overloaded isResident method and Library had an overloaded isAvailable method. For House, this method is useful when checking of a family, group of roommates, friend group, etc. are all living in the same house. For Library, this is useful for checking if a series of books is available at once. People at the library may not want to start a series unless all the books are available or want to check out all the books at once to ensure they aren't left on a cliffhanger waiting for the next book.
 - What worked, what didn't, what advice would you give someone taking this course in the future?
+I was confused by goToFloor(n) at first. I would clarify for someone taking this course in the future that Building's goToFloor(n) function assumes a building has an elevator and subclasses have to add in checks in case an elevator isn't there. I thought at first Building's goToFloor(n) was made for buildings without elevators and we had to add in elevator features, which made it very confusing when I looked at the code.
